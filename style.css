@@ -44,7 +44,7 @@ body {
 /* just the li that immeditally next ul */
 
 .menu>ul>li {
-    float: left;
+    float: right;
 }
 
 .menu-item {
@@ -61,4 +61,54 @@ body {
 .menu-item:hover {
     background-color: #ff0055;
     color: #000;
+}
+
+
+/* ------------styling syb----------------- */
+
+.sup-content {
+    /* حتى يرتبط فقط بالعنصر الداخلي ولا يرتبط بكل العمود نكتب */
+    position: absolute;
+    /* لكي يبتعد الصندوق عن  الاعلى ولا نستخدم على سبيل
+    المثال padding top */
+    top: 60px;
+    /*         */
+    overflow: hidden;
+    background-color: #333333;
+    /* this step for not display the list 
+    if there are not this sup content
+    and there are just sup-menu
+    then all the sup drop will diss apper  */
+    max-height: 0;
+}
+
+.sup-content a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/* this will ma;e the page good in all prowsers */
+
+
+/* .sup-drop {
+    padding: 0;
+}
+.sup-drop ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+} */
+
+
+/* the bootonms */
+
+.sup-drop ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.sup-drop ul li:hover {
+    background-color: #ff0055;
 }
