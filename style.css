@@ -1,0 +1,64 @@
+*,
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Risque', cursive;
+}
+
+body {
+    background-color: #888888;
+}
+
+
+/* ==================================== */
+
+.menu {
+    width: 100%;
+    background-color: #333333;
+    color: #ffffff;
+    height: 60px;
+    /* this height is very is very important to ma
+    make the bootom */
+}
+
+.menu #logo {
+    float: left;
+    height: 30px;
+    padding: 15px 30px;
+    line-height: 30px;
+    font-size: 1.4em;
+}
+
+
+/* just the ul that immeditally next menu */
+
+.menu>ul {
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style-type: none;
+}
+
+
+/* just the li that immeditally next ul */
+
+.menu>ul>li {
+    float: left;
+}
+
+.menu-item {
+    display: inline-block;
+    padding: 15px 20px;
+    /* next we need to let all the item in center 
+    of menu so we add 2 thing */
+    height: 30px;
+    line-height: 30px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu-item:hover {
+    background-color: #ff0055;
+    color: #000;
+}
