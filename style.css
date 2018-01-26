@@ -112,3 +112,42 @@ body {
 .sup-drop ul li:hover {
     background-color: #ff0055;
 }
+
+
+/* ------------controlingb----------------- */
+
+.menu-item:focus {
+    background-color: #ff0055;
+}
+
+
+/* here we are will descripe the movment
+1-تحديد الكلاس الذي يجب ان نركز عليه 
+2-نضع بعده الكلاس الذي يجب ان يتاثر 
+3- نضع بينهما اشارة المدة التي تدل على ان يكون 
+التاثير على نفس المستوى
+4- نصنع الحركة بالشكل الذي نريده */
+
+
+/* .menu-item:focus~.sup-content {
+    max-height: 400px;
+    transition: max-height 0.2s ease-in;
+    -webkit-transition: max-height 0.2s ease-in;
+    -moz-transition: max-height 0.2s ease-in;
+} */
+
+
+/* اما اذا اردنا ان تنزل القائمة اذا احطنا بها
+1- نضع hover
+2-نضع الكلاس وندخل الى اgقائمة */
+
+.menu ul li:hover .sup-content {
+    max-height: 400px;
+    transition: max-height 0.2s ease-in;
+    -webkit-transition: max-height 0.2s ease-in;
+    -moz-transition: max-height 0.2s ease-in;
+}
+
+#rmenu {
+    float: right;
+}
