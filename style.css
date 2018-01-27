@@ -1,97 +1,108 @@
-*,
-body,
-html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Risque', cursive;
-}
-
-body {
-    background-color: #888888;
-}
-
-
-/* ==================================== */
-
-.menu {
-    width: 100%;
-    background-color: #333333;
-    color: #ffffff;
-    height: 60px;
-    /* this height is very is very important to ma
+                        *,
+                        body,
+                        html {
+                            margin: 0;
+                            padding: 0;
+                            font-family: 'Risque', cursive;
+                        }
+                        
+                        body {
+                            background-color: #888888;
+                        }
+                        /* ==================================== */
+                        
+                        .menu {
+                            width: 100%;
+                            background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
+                            background: #45484d;
+                            /* Old browsers */
+                            background: -moz-linear-gradient(top, #45484d 0%, #000000 100%);
+                            /* FF3.6-15 */
+                            background: -webkit-linear-gradient(top, #45484d 0%, #000000 100%);
+                            /* Chrome10-25,Safari5.1-6 */
+                            background: linear-gradient(to bottom, #45484d 0%, #000000 100%);
+                            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000', GradientType=0);
+                            /* IE6-9 */
+                            ;
+                            color: #ffffff;
+                            height: 60px;
+                            /* this height is very is very important to ma
     make the bootom */
-}
-
-.menu #logo {
-    float: left;
-    height: 30px;
-    padding: 15px 30px;
-    line-height: 30px;
-    font-size: 1.4em;
-}
-
-
-/* just the ul that immeditally next menu */
-
-.menu>ul {
-    margin: 0;
-    padding: 0;
-    float: left;
-    list-style-type: none;
-}
-
-
-/* just the li that immeditally next ul */
-
-.menu>ul>li {
-    float: right;
-}
-
-.menu-item {
-    display: inline-block;
-    padding: 15px 20px;
-    /* next we need to let all the item in center 
+                            box-shadow: 3px 5px 1px #938c8c;
+                        }
+                        
+                        .logo {
+                            width: 75px;
+                            float: left;
+                            height: 50px;
+                            padding: 5px 30px;
+                        }
+                        /* we must don't delet any thing 
+    from html just the display none
+    for delet any thing from css */
+                        
+                        .menu #logo {
+                            float: left;
+                            height: 30px;
+                            padding: 15px 30px;
+                            line-height: 30px;
+                            font-size: 1.4em;
+                            display: none;
+                        }
+                        /* just the ul that immeditally next menu */
+                        
+                        .menu>ul {
+                            margin: 0;
+                            padding: 0;
+                            float: left;
+                            list-style-type: none;
+                        }
+                        /* just the li that immeditally next ul */
+                        
+                        .menu>ul>li {
+                            float: right;
+                        }
+                        
+                        .menu-item {
+                            display: inline-block;
+                            padding: 15px 20px;
+                            /* next we need to let all the item in center 
     of menu so we add 2 thing */
-    height: 30px;
-    line-height: 30px;
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.menu-item:hover {
-    background-color: #ff0055;
-    color: #000;
-}
-
-
-/* ------------styling syb----------------- */
-
-.sup-content {
-    /* حتى يرتبط فقط بالعنصر الداخلي ولا يرتبط بكل العمود نكتب */
-    position: absolute;
-    /* لكي يبتعد الصندوق عن  الاعلى ولا نستخدم على سبيل
+                            height: 30px;
+                            line-height: 30px;
+                            color: #ffffff;
+                            text-decoration: none;
+                        }
+                        
+                        .menu-item:hover {
+                            background-color: #ff0055;
+                            color: #000;
+                        }
+                        /* ------------styling syb----------------- */
+                        
+                        .sup-content {
+                            /* حتى يرتبط فقط بالعنصر الداخلي ولا يرتبط بكل العمود نكتب */
+                            position: absolute;
+                            /* لكي يبتعد الصندوق عن  الاعلى ولا نستخدم على سبيل
     المثال padding top */
-    top: 60px;
-    /*         */
-    overflow: hidden;
-    background-color: #333333;
-    /* this step for not display the list 
+                            top: 60px;
+                            /*         */
+                            overflow: hidden;
+                            background-color: #333333;
+                            /* this step for not display the list 
     if there are not this sup content
     and there are just sup-menu
     then all the sup drop will diss apper  */
-    max-height: 0;
-}
-
-.sup-content a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-
-/* this will ma;e the page good in all prowsers */
-
-
-/* .sup-drop {
+                            max-height: 0;
+                        }
+                        
+                        .sup-content a {
+                            color: #ffffff;
+                            text-decoration: none;
+                        }
+                        /* this will ma;e the page good in all prowsers */
+                        /* .sup-drop {
     padding: 0;
 }
 .sup-drop ul {
@@ -100,54 +111,74 @@ body {
     margin: 0;
     list-style-type: none;
 } */
-
-
-/* the bootonms */
-
-.sup-drop ul li a {
-    display: inline-block;
-    padding: 10px 20px;
-}
-
-.sup-drop ul li:hover {
-    background-color: #ff0055;
-}
-
-
-/* ------------controlingb----------------- */
-
-.menu-item:focus {
-    background-color: #ff0055;
-}
-
-
-/* here we are will descripe the movment
+                        /* the bootonms */
+                        
+                        .sup-drop ul li a {
+                            display: inline-block;
+                            padding: 10px 20px;
+                        }
+                        
+                        .sup-drop ul li:hover {
+                            background-color: #ff0055;
+                        }
+                        /* ------------controlingb----------------- */
+                        
+                        .menu-item:focus {
+                            background-color: #ff0055;
+                        }
+                        /* here we are will descripe the movment
 1-تحديد الكلاس الذي يجب ان نركز عليه 
 2-نضع بعده الكلاس الذي يجب ان يتاثر 
 3- نضع بينهما اشارة المدة التي تدل على ان يكون 
 التاثير على نفس المستوى
 4- نصنع الحركة بالشكل الذي نريده */
-
-
-/* .menu-item:focus~.sup-content {
+                        /* .menu-item:focus~.sup-content {
     max-height: 400px;
     transition: max-height 0.2s ease-in;
     -webkit-transition: max-height 0.2s ease-in;
     -moz-transition: max-height 0.2s ease-in;
 } */
-
-
-/* اما اذا اردنا ان تنزل القائمة اذا احطنا بها
+                        /* اما اذا اردنا ان تنزل القائمة اذا احطنا بها
 1- نضع hover
 2-نضع الكلاس وندخل الى اgقائمة */
-
-.menu ul li:hover .sup-content {
-    max-height: 400px;
-    transition: max-height 0.2s ease-in;
-    -webkit-transition: max-height 0.2s ease-in;
-    -moz-transition: max-height 0.2s ease-in;
-}
-
-#rmenu {
-    float: right;
-}
+                        
+                        .menu ul li:hover .sup-content {
+                            max-height: 400px;
+                            transition: max-height 0.2s ease-in;
+                            -webkit-transition: max-height 0.2s ease-in;
+                            -moz-transition: max-height 0.2s ease-in;
+                        }
+                        
+                        #rmenu {
+                            float: right;
+                        }
+                        /* ----------content-------- */
+                        
+                        .sometext {
+                            text-align: center;
+                            padding-top: 400px;
+                            font-size: 5.6em;
+                            font-weight: bold;
+                        }
+                        
+                        .sometext span {
+                            font-weight: bolder;
+                            color: red;
+                        }
+                        
+                        .content-img {
+                            padding-top: 30px;
+                            text-align: center;
+                            margin: auto;
+                            /* do not add aborder in all the div
+                            border :-------:
+                            do that in the img
+                            */
+                        }
+                        
+                        .content-img img {
+                            border: 4px solid black;
+                            box-shadow: 3px 5px 1px #938c8c;
+                            opacity: 1.8;
+                            -webkit-filter: grayscale(100%)
+                        }
